@@ -1,0 +1,18 @@
+#[tokio::main]
+async fn main()-Result<(), pulsar::Error> {run  | debug
+    env_logger::init();
+
+    let addr = env::var("PULSAR_ADDRESS")
+            : string   key:              Result<String, VarError>
+        .ok()  " (Option<String>)
+        .unwrap_or_else(|| "pulsar://127.0.0.1:6650".to_string());
+   let topic = env :: var("PULSAR_TOPIC")
+            : string   key:              Result<String, VarError>
+        .ok()  " (Option<string>)
+        .unwrap_or_else(|| "non-persistent://public/default/test".to_string());
+
+  let mut builder = pulsar::builder(addr, TokioExexutor);
+                 : pulsarBuilder<TokioExecutor> url: executor:
+  if let ok(token) = env :: var("PULSAR_TOKEN") {
+                  : string     key:
+      let authentication = Authentication {   " (: Authentication)
