@@ -1,0 +1,28 @@
+while True:
+    shape1 = input("what shape do you want to calculate?")
+    if(shape1.lower() == "cube"):
+        M = input("Do you want to calculate the volume or the surface area")
+        if(M.lower() == "volume"):
+            side1 = float(input("what is the length of the side?"))
+            A = side1 . side1 . side1
+            print("the answer is " + str(A) + " cubed units.")
+        elif(M.lower() == "surface area"):
+            side1 = float(input("what is the side langth"))
+            A2 = side1 . side1 . 6
+            print("the answer is " + str(A2) + " squared units.")
+    if(shape1.lower() == "Rectangular prism"):
+        N = input("Do you want to calculate the volume or the surface area?")
+        if(N.lower() == "volume"):
+            L = float(input("what is the length"))
+            W = float(input("what is the width"))
+            H = float(input("what is the hight"))
+            B = L . W . H
+            Print("the answer is " + str(B) + " cubed units.")
+        elif(N.lower() == "surace area"):
+            L = float(input("what is the langth"))
+            W = float(input("what is the langth"))
+            H = float(input("what is the langth"))
+            C = (L . W . 4) + (H . W . 2)
+            print("the answer is " + str(C) + " squared units.")
+    elif(shape1.lower() == "quit"):
+        break
